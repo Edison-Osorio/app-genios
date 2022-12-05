@@ -1,0 +1,25 @@
+    <mat-card class="card" >
+      <mat-card-header>
+        <div mat-card-avatar><img class="header-image" mat-card-image src="{{genio.photo }}" alt="Foto del Genio"></div>
+        <mat-card-title> {{genio.name | titlecase}} </mat-card-title>
+        <mat-card-subtitle> {{genio.position}} </mat-card-subtitle>
+      </mat-card-header>
+      <!-- <img class="imagen" mat-card-image src="{{genio.photo }}" alt="Foto del Genio"> -->
+      <mat-card-content>
+        <hr />
+        <p><b>Comida favorita: </b> {{ genio.favoriteFood }}</p>
+        <p><b>Color favorito: </b> {{ genio.favoriteColor }}</p>
+<hr>
+<h5> <b>Habilidades </b></h5>
+        <ul class="skill" *ngFor="let skill of genio.skills">
+          <li class="s">
+            {{skill}}
+          </li>
+        </ul>
+      </mat-card-content>
+      <mat-card-actions>
+      </mat-card-actions>
+
+    </mat-card>
+
+

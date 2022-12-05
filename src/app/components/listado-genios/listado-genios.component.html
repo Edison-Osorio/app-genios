@@ -1,0 +1,6 @@
+
+  <mat-grid-list class="background-grid" cols="3" rowHeight="1.5:1">
+    <mat-grid-tile *ngFor="let genio of listadoGenios">
+          <app-card-genios [genio]="genio"></app-card-genios>
+    </mat-grid-tile>
+  </mat-grid-list>
