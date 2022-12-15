@@ -8,6 +8,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { NavegacionComponent } from './navegacion.component';
+import { AngularMatrialModule } from '../angular-matrial/angular-matrial.module';
+import { ListadoGeniosComponent } from '../components/listado-genios/listado-genios.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AppComponent } from '../app.component';
 
 describe('NavegacionComponent', () => {
   let component: NavegacionComponent;
@@ -15,15 +19,11 @@ describe('NavegacionComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [NavegacionComponent],
+      declarations: [NavegacionComponent, ListadoGeniosComponent],
       imports: [
         NoopAnimationsModule,
-        LayoutModule,
-        MatButtonModule,
-        MatIconModule,
-        MatListModule,
-        MatSidenavModule,
-        MatToolbarModule,
+        AngularMatrialModule,
+        HttpClientModule
       ]
     }).compileComponents();
   }));

@@ -7,6 +7,7 @@ import { Genio } from '../components/models/genio';
   providedIn: 'root',
 })
 export class ListadoGeniosService {
+  
   private readonly urlEndPoint =
     'https://apps.coopsana.co:8766/api-prueba-tecnica-coopsana/desarrollo-tecnologico/genios';
 
